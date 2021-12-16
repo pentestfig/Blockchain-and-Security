@@ -1,0 +1,170 @@
+#Consensus Mechanisms
+
+	+ Ensure that all the nodes within the blockchain are synchronized and agree for which transactions are legitimate and to be added to blockchain. 
+	+ A blockchain without a consensus would fall into pieces.
+	+ A way to ensure that rules are followed.
+	+ Provides continuous check on integrity of: new data blocks, past ledger transactions. 
+	+ Establishes trust.
+	+ Reduces double-spending attacks.
+	+ A way to come into a single mutual conclusion, called consensus. 
+	+ Protects and maintain the integrity and security of blockchain. 
+
+
+##Proof-of-Work(PoW)
+
+	+ It uses an algorithm to encourage users to participate in mining to solve puzzles. 
+	+ Computational-power intensive.
+	+ First user or pool who solves puzzle first is granted with that blockchain's reward.
+
+
+##Proof-of-Stake(PoS)
+
+	+ Defines privileges based on known investments of user in the Blockchain.
+	+ Basically, who has the most investment is privileged to solve the puzzle.
+
+
+#Consensus Mechanism in Private Blockchain
+
+	+ Private blockchains generally use less complex or less computational-power intensive protocols.
+
+
+##Proof-of-Authority(PoA)
+
+	+ Verifies the identity of a node. 
+	+ Distribution of authority to known and trusted nodes to solve new blocks. 
+	+ Subject to authentication.
+	+ Permits participating nodes. 
+	+ If user acts differently than that of publishing user, the user loses credibility, thus, reduces to probability of publishing blocks. 
+
+
+#Security of Blockchain Consensus
+
+##Proof-of-Work
+
+	+ Miners spend lots of time and computational-power to solve puzzles based on hash algorithm.
+	+ Energy-intensive process. 
+	+ When block is solved, transaction in that block is considered as confirmed. 
+	+ Rewards are given to solving miners.
+	+ Block's Header Data:
+		- Previous Block's Hash
+		- Markle Tree Root
+		- Target
+		- Timestamp
+		- Version
+		- None (Set to 0)
+	+ Principle of the PoW security is that no entity should have more than %50 of the total computing power because this leads to taking over the control of the system.
+	+ This is called %51 Attack. By this attack, attackers can:
+		- Inject false transactions.
+		- Eliminate all other users from network.
+		- Perform double-spending attack.
+		- Steal assets.
+
+
+###Double-Spending Attacks
+
+	+ Attackers use same coins in this form of attack to issue more transactions. 
+
+
+###Selfish Mining Attacks
+
+	+ With this attack, miners who equipped with %33 of mining power can earn %50 of mining power. 
+
+
+###Main Problems with PoW
+
+	+ %51 risk: by gaining the power, attackers can manipulate blockchain.
+	+ Time consuming: time and energy intensive approach.
+	
+
+##Proof-of-Stake(PoS)
+
+	+ PoW chooses the miner depending on its investment. 
+	+ Miners get transaction fees and that is why they are called forgers instead of miners. 
+	+ In case of chain fork, miners use their tokens to vote for which fork to use. 
+	+ Since it's almost free to vote for fork, miners can vote for two sides. 
+	+ Better energy efficiency.
+	+ Reduces hardware requirements.
+	+ Stronger immunity, should result introducing more nodes into network.
+	+ Prone to double-spending attacks
+	+ Selfish mining is not possible because there is no reward for miners.  
+
+
+###Penalties for Attacker
+
+	+ A malicious validator loses its credibility. 
+	+ Loss of attacker's net worth.
+	
+###Barriers to %51 Stake
+
+	+ Makes %51 attack a very expensive choice. 
+
+
+##Delegated Proof-of-Stake(DPoS)
+	
+	+ People in a cryptocurrency vote for witnesses to secure computer network. 
+	+ People have more tokens will influence the network more than people who have few. 
+	+If a witness fails to do quality job, people in the community can remove their votes, essentially firing bad actor. 
+	+ Delegates are elected similar to witnesses. They manage network but do not play a role in transactions. Delegates can recommend changes in blocks sizes or rewards to be paid. These recommendations are then voted by witnesses.
+	+ If a witness fails to solve a block, rest of the blocks remain unvalidated. Then incentive is accumulated for the next witness to solve block. 
+	+ Strength of the vote is proportional to stakes.
+
+
+###Advantages of DPoS
+
+	+ Protection against double-spending.
+	+ More democratic and financially inclusive. 
+	+ Provides more distribution and decentralization. 
+	+ Energy efficient, more scalable. 
+
+
+###Disadvantages of DPoS
+
+	+ Small number of witnesses can lead to heavy centralization on network. 
+	+ User with small stake might choose not to take part in voting considering their vote's power. 
+
+
+##Proof-of-Authority(PoA)
+
+	+ Offers high tolerance for faults and performance. 
+	+ A node should pass a provisional authentication to gain rights to create new blocks. 
+	+ No requirement for high-performance hardware.
+	+ High transaction rate.
+	+ Tolerance to compromised and malicious nodes. 
+
+##Proof-of-Burn(PoB)
+
+	+ Users transfer digitals currency to an address that has no private keys. 
+	+ These coins can be viewed but not accessed.
+	+ When coins are sent to these kinds of addresses, it reduces circulating supply.
+
+
+##Proof-of-Elapsed Time(PoET)
+
+	+ Designed to improve proof-of-work consensus.
+	+ Removes the need for mining-intensive process and replaces with randomized timer system for network participants. 
+	+ Every validator gets a fair chance for next blocks. 
+	+ Blocks are broadcasted through network. 
+	+ Winner is who has the least timer.
+
+
+##Byzantine Fault Tolerance(BFT)
+
+	+ It's the function of finding an agreement or consensus on individual blocks based on PoW even though certain nodes refuse to respond. 
+	+ Two categories of Byzantine Failure:
+		- A node having a true technological fault and stops running or responding. 
+		- Arbitrary Node Failure: Node can fail to return a respond. 
+	+ BFT is to overcome these failures. 
+
+
+##Practical Byzantine Failure Tolerance(PBFT)
+
+	+ Protects against Byzantine failures. 
+	+ Looks for optimization of aspects of BFT.
+	+ Decision is made based on total number of decisions submitted by all "Generals". 
+	+ Each 	General, manages an internal state which is an ongoing information status. 
+	+ In PBFT, nodes are organized in way that one node is main (or leader) and others are secondary (or backup) nodes. 
+
+
+	
+
+	
