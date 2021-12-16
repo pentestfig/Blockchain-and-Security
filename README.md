@@ -43,9 +43,9 @@
 
 ##Blocks, Nodes & Network
 
-	+ Blocks: Files that permanently record data on blockchain. It is like a record book. Cannot be changed or deleted. 
-	Bitcoin block stores "sender, receiver and the amount transferred". Block hash (a long alphanumeric cryptographic 
-	value) is generated. Hash is useful to identify each block. 
+	+ Blocks: Files that permanently record data on blockchain. It is like a record book. Cannot be changed or 
+	deleted. Bitcoin block stores "sender, receiver and the amount transferred". Block hash (a long alphanumeric 
+	cryptographic value) is generated. Hash is useful to identify each block. 
 	+ Node: Any device that is connected to blockchain network.
 	+ Network: Peers are computer systems connected to one another and form P2P network. 
 
@@ -54,8 +54,8 @@
 	+ Each transaction must be authorized and authenticated before it's added to blockchain. 
 	+ Keys authenticate users to access their wallets or accounts. 
 	+ Every user has unique private key and public key is accesible by everyone
-	+ Majority of nodes show consent that transaction is legitimate. Rewards are given to the people who verify transactions 
-	to encourage them. this is called proof-of-work (PoW).
+	+ Majority of nodes show consent that transaction is legitimate. Rewards are given to the people who 
+	verify transactions to encourage them. this is called proof-of-work (PoW).
 
 
 
@@ -73,8 +73,8 @@
 
 ##Wallets and Keys
 
-	+ A wallet is an application that holds both private and public key and it communicates with various blockchains 
-	to let user send or receive digital currencies. 
+	+ A wallet is an application that holds both private and public key and it communicates with various 
+	blockchains to let user send or receive digital currencies. 
 	+ When users send you digital currencies, they basically sign off ownership at your wallet's address.
 	+ Private key in your wallet must match the public address with which the currency is allocated to.
 
@@ -84,14 +84,14 @@
 	+ It is a hash-based data structure wherein each leaf node is a hash of a data block. 
 	+ It usually has a factor of branching 2, which means that each node has up to 2 children.
 	+ It is use for effective data validation. 
-	+ Completely secure because  hashes are used instead of complete files. Hashes are way to encrypt files that are 
-	slightly smaller in size.
+	+ Completely secure because  hashes are used instead of complete files. Hashes are way to encrypt files 
+	that are slightly smaller in size.
 
 
 ##Consensus Mechanisms
 
-	+ Protocols to make sure all nodes are synchronized and agree on which transactions are legitimate and are to be 
-	added to blockchain. 
+	+ Protocols to make sure all nodes are synchronized and agree on which transactions are legitimate and 
+	are to be added to blockchain. 
 	+ Without a proper consensus mechanisms, blockchains are vulnerable to various attacks. 
 	+ They are simply a method to decide within a group. 
 
@@ -109,7 +109,8 @@
 
 ##Public & Private Blockchains
 
-	+ Private and public blockchains have their own advantages & disadvantages in term of performance, privacy and security. 
+	+ Private and public blockchains have their own advantages & disadvantages in term of performance, 
+	privacy and security. 
 
 ###Public Blockchain
 
@@ -133,8 +134,8 @@
 
 	+ Fork is a modification to the protocol on the blockchain. 
 	+ Basically, a separation from previous blockchain. 
-	+ Sometimes nodes in the blockchain cannot come to an agreement on the potential existence of blockchain which 
-	splits it to two or more blockchains temporarily or permanently.  
+	+ Sometimes nodes in the blockchain cannot come to an agreement on the potential existence of blockchain
+	which splits it to two or more blockchains temporarily or permanently.  
 	
 ###Reasons
 	
