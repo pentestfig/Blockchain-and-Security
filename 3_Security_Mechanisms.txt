@@ -1,0 +1,169 @@
+#Basic Security Mechanisms
+
+##Public Key Cryptography
+
+	+ Also called asymmetric cryptography
+	+ There is two keys:
+		- Public key: used for encryption.
+		- Private key: used for decryption. 	
+	+ Public keys are stored in digital certificates. 
+	+ Digital signatures: information is digitally signed with private key and confirmed with the public key of users. 
+	+ Encryption: Information is encrypted with public key of a user and decrypted with private key of the person. 
+	+ Benefits of using digital signature:
+		- Authentication
+		- Non-repudiation
+		- Integrity
+	+ Benefits of using encryption:
+		- Confidentiality
+		- Integrity
+		- Authenticity
+
+
+##Elliptic Curve Cryptography
+
+	+ Alternative to RSA. 
+	+ Security through elliptic curves between key pairs for public key encryption. 
+	+ As secure as RSA, requires less computational power since it has smaller key sizes.
+	+ Side-channel attacks, twist-security attacks are weaknesses. 
+
+
+##Hash Function
+
+	+ Taking arbitrary length of input and converting it to a fixed length output.
+	+ Irreversible.
+	+ Size depends on the hash function used.
+	+ Even tiny changes in input will cause a significant change in output. 
+	+ Commonly used, SHA-256, MD5.
+	+ Provides integrity. 
+
+##Hashing and Cybersecurity
+
+	+ Salting: adding random data to password before hash process. This makes it more difficult for hackers to get password.
+
+###Secure Hash Algorithm
+
+	+ A family of cryptographic functions. Consists of: an algorithm consisting bitwise operations, modular additions, compression functions.
+	+ Examples: SHA-1, SHA-2, SHA3.
+	+ A hash is generated that looks nothing like input.
+
+
+###IP Security Architecture Components
+
+	+ Encapsulating Security Payload(ESP): Offers integrity, encryption, anti-replay, authentication and payload authentication.
+	+ Authentication Header(AH): Offers integrity, anti replay, does not have encryption. Does not protect the information security. 
+	+ Internet Key Exchange(IKE): Designed to swap encryption keys dynamically and find a way between 2 devices through the Security Association(SA.
+	+ Encryption Algorithm: A document that describes how various encryption algorithms are used. 
+	+ Authentication Algorithm: Document that describe how various encryption algorithms are used for AH. 
+	+ Key Management: A document that describes key management schemes.
+	+ Domain of Interpretation(DOI): Contains the value that other documents need to relate to each other. 
+
+
+#Advanced Cryptographic Encryption
+
+
+##Advanced Encryption Standard(AES)
+
+	+ One of the most commonly used symmetric block cipher algorithms worldwide. 
+	+ Its purpose is to override the DES algorithm due to its vulnerabilities. 
+	+ Three different key weights: AES 128, 196, 256 bits. Each of them has 128 bits block size. 
+	+ Governments and military use it. 
+
+###AES Algorithm
+	
+	+ It's a block cipher in which all data is encrypted in blocks. 
+	+ Each block is 128 bits in length. 
+	+ Same key is used to encrypt and decrypt. 
+	+ 128 bit key: 10 rounds, 192 bit key: 12 rounds, 256 bit key: 14 rounds.
+
+##Triple Data Encryption Standard(3DES)
+
+	+ It uses DES three times. 
+	+ Now there are better options to use than 3DES.
+
+	
+##Blowfish 
+
+	+ A symmetric block cipher.
+	+ 8-byte fixed data block size. 
+	+ Its key ranges from 32 to 443 bits.
+	+ It is fast and considered to be safe. 
+	+ With a proper key size, it can be protected against brute force attacks. 
+	+ Free for all applications. 
+
+
+##Twofish Encryption
+
+	+ Also a symmetric block cipher.
+	+ 128 bits block size. 
+	+ Accepts key of any length up to 256 bits.
+	+ Fast on both 32-bit and 8-bit CPUs (smart cards, embedded chips etc.).
+	+ Edged out by new AES.
+ 
+
+#Other Security Mechanisms
+
+#Digital Signature
+
+	+ It's substitution for a handwritten signature. 
+	+ Detail of an electronic record used for authentication. 
+	+ The signature is invalidated if a document is subjected to fraudulent alteration. 
+	+ Guarantees protection against falsification. 
+	+ Unable to repudiate the signature attached to a document. 
+	+ Some digital signature algorithms are: RSA-PSS, ECDSA, Ed25519 and so on.
+
+
+#Multisig Authorization
+
+	+ Unless all the necessary private keys are provided, transactions will not take place. 
+	+ Losing or getting one key compromised doesn't mean the compromise of account. 
+
+
+##RSA Algorithm
+
+	+ A asymmetric cryptographic method that is commonly used to protect data. 
+	+ Two separate mathematically related keys are created by RSA: one public and one private. 
+	+ Private keys must be kept private. 
+	
+
+##Message Authentication Code
+
+	+ Everyone can see the message.
+	+ Provides authentication but not secrecy. 
+	+ Sender and receiver share the same key. 
+
+
+##Digital Certificates
+
+	+ It's issued by a third party (certification authority, CA) that proves identity of the sender to the recipient and vice versa. 
+	+ It contains: Holder's name, serial number, dates for expiration, public key of the certificate holder, digital signature of issuing authority. 
+
+
+##Zero Knowledge Proofs
+
+	+ Without revealing any additional details, "Prover" may prove that a certain assertion is valid to the "Verifier".
+	+ Completeness: If the argument is valid and all users follow the law, without any outside support, the verifier will be persuaded. 
+	+ Soundness: the verifier would not be persuaded in either case if the assertion is incorrect.
+	+ Zero-Knowledge: All knowledge outside the assumption that the argument is true or false would not be open to the verifier.
+	+ Advantages are:
+		- Simple: Does not require any sophisticated system of encryption.
+		- Secure: Does not require to report some kind of details. 
+	+ Disadvantages are: 
+		- Lengthy: There are around 2k calculations.
+		- Imperfect: Messages sent to prover/verifier can be destroyed or changed. 
+		- Restricted: Protocol allows the password to be numerical value. 
+
+###Where to Implement ZKP in Blockchain?
+
+	+ Messaging.
+	+ Authentication.
+	+ Storage protection. 
+	+ Sending Private Blockchain Transactions.
+	+ Complex documentation.
+	+ File System Control.
+	+ Security for Sensitive Information. 
+	
+
+
+	
+
+	
